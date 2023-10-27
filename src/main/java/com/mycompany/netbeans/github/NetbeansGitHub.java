@@ -1,6 +1,8 @@
 
 package com.mycompany.netbeans.github;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Usuario
@@ -8,8 +10,12 @@ package com.mycompany.netbeans.github;
 public class NetbeansGitHub {
 
     public static void main(String[] args) {
-    	int x=3;
-	int y=11;
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Introduce el primer numero: ");
+    	int x = scan.nextInt();
+	System.out.println("Introduce el segundo número: ");
+    	int y = scan.nextInt();
 	int z = suma( x, y);
 	System.out.println(z);
     }	
